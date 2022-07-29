@@ -1,10 +1,93 @@
+:root {
+    --page-bg-color: #e8e8e8;
+    --border: 3px solid gray;
+    --border-radius: 20px;
+}
+
 * {
     border: 1px solid red;
     font-family: system-ui;
 }
 
 body {
-    background-color: #e8e8e8;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--page-bg-color);
+}
+
+.header {
+    text-align: center;
+}
+
+.calculator {
+    display: flex;
+    flex-direction: column;
+    border: var(--border);
+    border-radius: var(--border-radius);
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    width: 400px;
+    height: 480px;
+    padding: 2%;
+}
+
+.calculator .display {
+    border: inherit;
+    border-radius: inherit;
+    font-weight: bold;
+    height: 15%;
+    margin-bottom: 2%;
+}
+
+#last-operand {
+    text-align: right;
+    padding: 5px 5px 0 0;
+    height: 20px;
+}
+
+#current-operand {
+    text-align: right;
+    padding-right: 5px;
+    font-size: 36px;
+    height: 50px;
+}
+
+.calculator .keys {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    border: inherit;
+    border-radius: inherit;
+}
+
+
+.calculator .keys button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 88px;
+    aspect-ratio: 1;
+    font-size: 42px;
+    font-weight: bolder;
+    border: inherit;
+    border-radius: inherit;
+    margin: 4px;
+}
+
+button:hover {
+    background-color: lightgray;
+}
+
+#allclear {
+    background-color: orange;
+    color: black;
+}
+
+#allclear:hover {
+    background-color:darkorange;
 }
 
 .footer {
