@@ -5,7 +5,7 @@
 }
 
 * {
-    border: 1px solid red;
+    /* border: 1px solid red; */
     font-family: system-ui;
 }
 
@@ -24,7 +24,7 @@ body {
     flex-direction: column;
     border: var(--border);
     border-radius: var(--border-radius);
-    position: absolute;
+    position: fixed;
     left: 50%;
     top: 50%;
     -webkit-transform: translate(-50%, -50%);
@@ -44,13 +44,13 @@ body {
 
 #last-operand {
     text-align: right;
-    padding: 5px 5px 0 0;
+    padding: 7px 7px 0 0;
     height: 20px;
 }
 
 #current-operand {
     text-align: right;
-    padding-right: 5px;
+    padding-right: 7px;
     font-size: 36px;
     height: 50px;
 }
@@ -68,7 +68,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    min-width: 88px;
+    min-width: 90px;
     aspect-ratio: 1;
     font-size: 42px;
     font-weight: bolder;
